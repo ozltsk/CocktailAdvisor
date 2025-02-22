@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocktail Recommender</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { width: 300px; padding: 5px; }
+        button { padding: 5px 10px; margin-left: 10px; }
+        #response { margin-top: 20px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>Cocktail Recommender</h1>
+    <input type="text" id="input" placeholder="Type ingredients or question">
+    <button onclick="sendRequest()">Submit</button>
+    <div id="response"></div>
+
+    <script>
+        async function sendRequest() {
+            const input = document.getElementById('input').value;
+            const response = await fetch('/submit/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: input })
+            });
+            const data = await response.json();
+            document.getElementById('response').innerHTML = data.response;
+        }
+    </script>
+</body>
+</html>
