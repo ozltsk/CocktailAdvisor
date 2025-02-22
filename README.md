@@ -17,7 +17,7 @@ This project is a **FastAPI-based web application** that allows users to search 
 - **Python 3.8+**: Core programming language.
 
 ## Project Structure
-cocktail-recommender/
+'''cocktail-recommender/
 ├── app/
 │   └── main.py          # Main FastAPI application logic
 ├── templates/
@@ -25,7 +25,7 @@ cocktail-recommender/
 ├── data/
 │   └── final_cocktails.csv  # CSV file with cocktail data (name, ingredients)
 ├── requirements.txt     # Project dependencies
-└── README.md            # This file
+└── README.md            # This file'''
 
 ##Install Dependencies:
 'pip install -r requirements.txt'
