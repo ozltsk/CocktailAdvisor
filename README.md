@@ -17,7 +17,8 @@ This project is a **FastAPI-based web application** that allows users to search 
 - **Python 3.8+**: Core programming language.
 
 ## Project Structure
-'''cocktail-recommender/
+```
+cocktail-recommender/
 ├── app/
 │   └── main.py          # Main FastAPI application logic
 ├── templates/
@@ -25,19 +26,24 @@ This project is a **FastAPI-based web application** that allows users to search 
 ├── data/
 │   └── final_cocktails.csv  # CSV file with cocktail data (name, ingredients)
 ├── requirements.txt     # Project dependencies
-└── README.md            # This file'''
+└── README.md            # This file
+```
 
-##Install Dependencies:
-'pip install -r requirements.txt'
-Ensure Data Availability:
-Place the data/final_cocktails.csv file in the data/ directory.
+## Install Dependencies:
+```
+pip install -r requirements.txt
+```
+
+## Ensure Data Availability:
+Place the **data/final_cocktails.csv** file in the data/ directory.
 Expected format: columns name (string) and ingredients (string formatted as a list, e.g., ['vodka', 'lime']).
-Running the Application
-Start the Server:
-bash
-Wrap
-Copy
+
+## Running the Application
+```
 python -m app.main
-Open in Browser:
-Navigate to http://localhost:8000.
-Usage
+```
+## Open in Browser:
+Navigate to
+```
+http://localhost:8000
+```
